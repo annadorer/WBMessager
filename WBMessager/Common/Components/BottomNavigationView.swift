@@ -30,7 +30,7 @@ enum Tabs {
     }
 }
 
-struct ButtomNavigationView: View {
+struct BottomNavigationView: View {
     
     @State private var selectedTab: Tabs = .contacts
     
@@ -57,6 +57,6 @@ struct ButtomNavigationView: View {
 
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtomNavigationView()
+        BottomNavigationView()
     }
 }
