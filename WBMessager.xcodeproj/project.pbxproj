@@ -6,19 +6,9 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		956E4E292C11BBF700234577 /* WBMessagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E4E282C11BBF700234577 /* WBMessagerApp.swift */; };
-		956E4E2B2C11BBF700234577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E4E2A2C11BBF700234577 /* ContentView.swift */; };
-		956E4E2D2C11BBF800234577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956E4E2C2C11BBF800234577 /* Assets.xcassets */; };
-		956E4E302C11BBF800234577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956E4E2F2C11BBF800234577 /* Preview Assets.xcassets */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		956E4E252C11BBF700234577 /* WBMessager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBMessager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		956E4E282C11BBF700234577 /* WBMessagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessagerApp.swift; sourceTree = "<group>"; };
-		956E4E2A2C11BBF700234577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		956E4E2C2C11BBF800234577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		956E4E2F2C11BBF800234577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95D479532C22D63B000B3E1E /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +25,7 @@
 		956E4E1C2C11BBF700234577 = {
 			isa = PBXGroup;
 			children = (
-				956E4E272C11BBF700234577 /* WBMessager */,
+				95D479532C22D63B000B3E1E /* Bank.playground */,
 				956E4E262C11BBF700234577 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,25 +36,6 @@
 				956E4E252C11BBF700234577 /* WBMessager.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		956E4E272C11BBF700234577 /* WBMessager */ = {
-			isa = PBXGroup;
-			children = (
-				956E4E282C11BBF700234577 /* WBMessagerApp.swift */,
-				956E4E2A2C11BBF700234577 /* ContentView.swift */,
-				956E4E2C2C11BBF800234577 /* Assets.xcassets */,
-				956E4E2E2C11BBF800234577 /* Preview Content */,
-			);
-			path = WBMessager;
-			sourceTree = "<group>";
-		};
-		956E4E2E2C11BBF800234577 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				956E4E2F2C11BBF800234577 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +96,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956E4E302C11BBF800234577 /* Preview Assets.xcassets in Resources */,
-				956E4E2D2C11BBF800234577 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +106,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956E4E2B2C11BBF700234577 /* ContentView.swift in Sources */,
-				956E4E292C11BBF700234577 /* WBMessagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +241,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +270,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

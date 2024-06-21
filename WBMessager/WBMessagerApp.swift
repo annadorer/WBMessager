@@ -11,7 +11,7 @@ import SwiftUI
 struct WBMessagerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BottomNavigationView()
         }
     }
 }
