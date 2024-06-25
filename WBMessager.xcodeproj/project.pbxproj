@@ -7,21 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95470D1D2C2A9F5C009A5D1A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95470D1C2C2A9F5B009A5D1A /* WidgetKit.framework */; };
+		95470D1F2C2A9F5C009A5D1A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95470D1E2C2A9F5C009A5D1A /* SwiftUI.framework */; };
+		95470D222C2A9F5C009A5D1A /* WBMessagerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95470D212C2A9F5C009A5D1A /* WBMessagerWidgetBundle.swift */; };
+		95470D242C2A9F5C009A5D1A /* WBMessagerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95470D232C2A9F5C009A5D1A /* WBMessagerWidget.swift */; };
+		95470D272C2A9F5E009A5D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95470D262C2A9F5E009A5D1A /* Assets.xcassets */; };
+		95470D292C2A9F5E009A5D1A /* WBMessagerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 95470D252C2A9F5C009A5D1A /* WBMessagerWidget.intentdefinition */; };
+		95470D2A2C2A9F5E009A5D1A /* WBMessagerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 95470D252C2A9F5C009A5D1A /* WBMessagerWidget.intentdefinition */; };
+		95470D2D2C2A9F5E009A5D1A /* WBMessagerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 95470D1A2C2A9F5B009A5D1A /* WBMessagerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95470D322C2AA7CB009A5D1A /* WBMessagerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95470D232C2A9F5C009A5D1A /* WBMessagerWidget.swift */; };
+		95470D332C2AACD8009A5D1A /* ContactCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66002C19929D0035116E /* ContactCardModel.swift */; };
+		95470D352C2AACF2009A5D1A /* ContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66022C19A5040035116E /* ContactAvatarView.swift */; };
+		95470D362C2AACF5009A5D1A /* ContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66042C19A58C0035116E /* ContactCardView.swift */; };
+		95470D372C2AAD03009A5D1A /* TypographyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF65FC2C13222D0035116E /* TypographyExtension.swift */; };
+		95470D382C2AAD2A009A5D1A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D4794F2C208FDF000B3E1E /* DateExtension.swift */; };
+		95470D392C2AAF74009A5D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956E4E2C2C11BBF800234577 /* Assets.xcassets */; };
+		95470D532C2AD122009A5D1A /* WBMessagerIntentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95470D522C2AD122009A5D1A /* WBMessagerIntentExtension.swift */; };
+		95470D552C2AD122009A5D1A /* WBMessagerIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95470D542C2AD122009A5D1A /* WBMessagerIntent.swift */; };
+		95470D592C2AD122009A5D1A /* WBMessagerIntent.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 95470D502C2AD122009A5D1A /* WBMessagerIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95470D5D2C2AD2D6009A5D1A /* BottomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66082C19B98B0035116E /* BottomNavigationView.swift */; };
+		95470D5E2C2AD50E009A5D1A /* ChatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66112C1B0B520035116E /* ChatsScreen.swift */; };
+		95470D5F2C2AD511009A5D1A /* MoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66132C1B0B930035116E /* MoreScreen.swift */; };
+		95470D602C2AD514009A5D1A /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF660E2C19DCD30035116E /* ContactsScreen.swift */; };
+		95470D612C2AD52B009A5D1A /* ContactCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66002C19929D0035116E /* ContactCardModel.swift */; };
+		95470D622C2AD576009A5D1A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66062C19AEAF0035116E /* SearchBarView.swift */; };
+		95470D632C2AD57D009A5D1A /* TypographyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF65FC2C13222D0035116E /* TypographyExtension.swift */; };
+		95470D642C2AD57F009A5D1A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D4794F2C208FDF000B3E1E /* DateExtension.swift */; };
+		95470D652C2AD595009A5D1A /* ProfileAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66152C1B5E6D0035116E /* ProfileAccountScreen.swift */; };
+		95470D662C2AD597009A5D1A /* ProfileAccountButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF661A2C1B64160035116E /* ProfileAccountButtonsView.swift */; };
+		95470D672C2AD5A7009A5D1A /* ContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66042C19A58C0035116E /* ContactCardView.swift */; };
+		95470D682C2AD5BB009A5D1A /* ContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66022C19A5040035116E /* ContactAvatarView.swift */; };
 		956E4E292C11BBF700234577 /* WBMessagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E4E282C11BBF700234577 /* WBMessagerApp.swift */; };
-		956E4E2B2C11BBF700234577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E4E2A2C11BBF700234577 /* ContentView.swift */; };
+		956E4E2B2C11BBF700234577 /* WalkthroughScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E4E2A2C11BBF700234577 /* WalkthroughScreen.swift */; };
 		956E4E2D2C11BBF800234577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956E4E2C2C11BBF800234577 /* Assets.xcassets */; };
 		956E4E302C11BBF800234577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956E4E2F2C11BBF800234577 /* Preview Assets.xcassets */; };
+		956E4E3A2C12ECD200234577 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E4E392C12ECD200234577 /* ActionButtonView.swift */; };
+		956E4E3C2C130A6F00234577 /* VerificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E4E3B2C130A6F00234577 /* VerificationScreen.swift */; };
+		95D4794D2C20462C000B3E1E /* UserAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D4794C2C20462C000B3E1E /* UserAgreementView.swift */; };
+		95D479502C208FDF000B3E1E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D4794F2C208FDF000B3E1E /* DateExtension.swift */; };
+		95DF65FD2C13222D0035116E /* TypographyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF65FC2C13222D0035116E /* TypographyExtension.swift */; };
+		95DF66012C19929D0035116E /* ContactCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66002C19929D0035116E /* ContactCardModel.swift */; };
+		95DF66032C19A5040035116E /* ContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66022C19A5040035116E /* ContactAvatarView.swift */; };
+		95DF66052C19A58C0035116E /* ContactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66042C19A58C0035116E /* ContactCardView.swift */; };
+		95DF66072C19AEAF0035116E /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66062C19AEAF0035116E /* SearchBarView.swift */; };
+		95DF66092C19B98B0035116E /* BottomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66082C19B98B0035116E /* BottomNavigationView.swift */; };
+		95DF660F2C19DCD30035116E /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF660E2C19DCD30035116E /* ContactsScreen.swift */; };
+		95DF66122C1B0B520035116E /* ChatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66112C1B0B520035116E /* ChatsScreen.swift */; };
+		95DF66142C1B0B930035116E /* MoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66132C1B0B930035116E /* MoreScreen.swift */; };
+		95DF66162C1B5E6D0035116E /* ProfileAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF66152C1B5E6D0035116E /* ProfileAccountScreen.swift */; };
+		95DF661B2C1B64160035116E /* ProfileAccountButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF661A2C1B64160035116E /* ProfileAccountButtonsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		95470D2B2C2A9F5E009A5D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956E4E1D2C11BBF700234577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95470D192C2A9F5B009A5D1A;
+			remoteInfo = WBMessagerWidgetExtension;
+		};
+		95470D572C2AD122009A5D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956E4E1D2C11BBF700234577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95470D4F2C2AD122009A5D1A;
+			remoteInfo = WBMessagerIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95470D4B2C2ACF39009A5D1A /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				95470D592C2AD122009A5D1A /* WBMessagerIntent.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956001532C29503200063371 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				95470D2D2C2A9F5E009A5D1A /* WBMessagerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		95470D1A2C2A9F5B009A5D1A /* WBMessagerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WBMessagerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		95470D1C2C2A9F5B009A5D1A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		95470D1E2C2A9F5C009A5D1A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		95470D212C2A9F5C009A5D1A /* WBMessagerWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessagerWidgetBundle.swift; sourceTree = "<group>"; };
+		95470D232C2A9F5C009A5D1A /* WBMessagerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessagerWidget.swift; sourceTree = "<group>"; };
+		95470D252C2A9F5C009A5D1A /* WBMessagerWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WBMessagerWidget.intentdefinition; sourceTree = "<group>"; };
+		95470D262C2A9F5E009A5D1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95470D282C2A9F5E009A5D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95470D502C2AD122009A5D1A /* WBMessagerIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = WBMessagerIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		95470D522C2AD122009A5D1A /* WBMessagerIntentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessagerIntentExtension.swift; sourceTree = "<group>"; };
+		95470D542C2AD122009A5D1A /* WBMessagerIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessagerIntent.swift; sourceTree = "<group>"; };
+		95470D562C2AD122009A5D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		956E4E252C11BBF700234577 /* WBMessager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBMessager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956E4E282C11BBF700234577 /* WBMessagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessagerApp.swift; sourceTree = "<group>"; };
-		956E4E2A2C11BBF700234577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		956E4E2A2C11BBF700234577 /* WalkthroughScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughScreen.swift; sourceTree = "<group>"; };
 		956E4E2C2C11BBF800234577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		956E4E2F2C11BBF800234577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		956E4E392C12ECD200234577 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		956E4E3B2C130A6F00234577 /* VerificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationScreen.swift; sourceTree = "<group>"; };
+		95D4794C2C20462C000B3E1E /* UserAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementView.swift; sourceTree = "<group>"; };
+		95D4794F2C208FDF000B3E1E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		95DF65FC2C13222D0035116E /* TypographyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographyExtension.swift; sourceTree = "<group>"; };
+		95DF66002C19929D0035116E /* ContactCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardModel.swift; sourceTree = "<group>"; };
+		95DF66022C19A5040035116E /* ContactAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAvatarView.swift; sourceTree = "<group>"; };
+		95DF66042C19A58C0035116E /* ContactCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardView.swift; sourceTree = "<group>"; };
+		95DF66062C19AEAF0035116E /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		95DF66082C19B98B0035116E /* BottomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationView.swift; sourceTree = "<group>"; };
+		95DF660E2C19DCD30035116E /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
+		95DF66112C1B0B520035116E /* ChatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsScreen.swift; sourceTree = "<group>"; };
+		95DF66132C1B0B930035116E /* MoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreScreen.swift; sourceTree = "<group>"; };
+		95DF66152C1B5E6D0035116E /* ProfileAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccountScreen.swift; sourceTree = "<group>"; };
+		95DF661A2C1B64160035116E /* ProfileAccountButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccountButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		95470D172C2A9F5B009A5D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95470D1F2C2A9F5C009A5D1A /* SwiftUI.framework in Frameworks */,
+				95470D1D2C2A9F5C009A5D1A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95470D4D2C2AD122009A5D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		956E4E222C11BBF700234577 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +162,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95470D1B2C2A9F5B009A5D1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95470D1C2C2A9F5B009A5D1A /* WidgetKit.framework */,
+				95470D1E2C2A9F5C009A5D1A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95470D202C2A9F5C009A5D1A /* WBMessagerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				95470D212C2A9F5C009A5D1A /* WBMessagerWidgetBundle.swift */,
+				95470D232C2A9F5C009A5D1A /* WBMessagerWidget.swift */,
+				95470D252C2A9F5C009A5D1A /* WBMessagerWidget.intentdefinition */,
+				95470D262C2A9F5E009A5D1A /* Assets.xcassets */,
+				95470D282C2A9F5E009A5D1A /* Info.plist */,
+			);
+			path = WBMessagerWidget;
+			sourceTree = "<group>";
+		};
+		95470D512C2AD122009A5D1A /* WBMessagerIntent */ = {
+			isa = PBXGroup;
+			children = (
+				95470D522C2AD122009A5D1A /* WBMessagerIntentExtension.swift */,
+				95470D542C2AD122009A5D1A /* WBMessagerIntent.swift */,
+				95470D562C2AD122009A5D1A /* Info.plist */,
+			);
+			path = WBMessagerIntent;
+			sourceTree = "<group>";
+		};
 		956E4E1C2C11BBF700234577 = {
 			isa = PBXGroup;
 			children = (
 				956E4E272C11BBF700234577 /* WBMessager */,
+				95470D202C2A9F5C009A5D1A /* WBMessagerWidget */,
+				95470D512C2AD122009A5D1A /* WBMessagerIntent */,
+				95470D1B2C2A9F5B009A5D1A /* Frameworks */,
 				956E4E262C11BBF700234577 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				956E4E252C11BBF700234577 /* WBMessager.app */,
+				95470D1A2C2A9F5B009A5D1A /* WBMessagerWidgetExtension.appex */,
+				95470D502C2AD122009A5D1A /* WBMessagerIntent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +217,15 @@
 		956E4E272C11BBF700234577 /* WBMessager */ = {
 			isa = PBXGroup;
 			children = (
-				956E4E282C11BBF700234577 /* WBMessagerApp.swift */,
-				956E4E2A2C11BBF700234577 /* ContentView.swift */,
+				95DF66112C1B0B520035116E /* ChatsScreen.swift */,
+				95DF66132C1B0B930035116E /* MoreScreen.swift */,
+				95DF66192C1B5F0E0035116E /* ProfileAcountScreen */,
+				95DF66102C19DCDA0035116E /* ContactsScreen */,
 				956E4E2C2C11BBF800234577 /* Assets.xcassets */,
+				956E4E282C11BBF700234577 /* WBMessagerApp.swift */,
+				95DF65FF2C19923C0035116E /* VerificationScreen */,
+				95DF65FA2C1321F90035116E /* Common */,
+				95DF65FE2C1991E90035116E /* WalkthroughScreen */,
 				956E4E2E2C11BBF800234577 /* Preview Content */,
 			);
 			path = WBMessager;
@@ -67,9 +239,132 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		95D4794E2C204E15000B3E1E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95D4794C2C20462C000B3E1E /* UserAgreementView.swift */,
+				956E4E392C12ECD200234577 /* ActionButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		95D479522C2094F1000B3E1E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95DF66082C19B98B0035116E /* BottomNavigationView.swift */,
+				95DF66062C19AEAF0035116E /* SearchBarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		95DF65FA2C1321F90035116E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				95D479522C2094F1000B3E1E /* Components */,
+				95DF65FB2C1322060035116E /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		95DF65FB2C1322060035116E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95DF65FC2C13222D0035116E /* TypographyExtension.swift */,
+				95D4794F2C208FDF000B3E1E /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95DF65FE2C1991E90035116E /* WalkthroughScreen */ = {
+			isa = PBXGroup;
+			children = (
+				95D4794E2C204E15000B3E1E /* Components */,
+				956E4E2A2C11BBF700234577 /* WalkthroughScreen.swift */,
+			);
+			path = WalkthroughScreen;
+			sourceTree = "<group>";
+		};
+		95DF65FF2C19923C0035116E /* VerificationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				956E4E3B2C130A6F00234577 /* VerificationScreen.swift */,
+			);
+			path = VerificationScreen;
+			sourceTree = "<group>";
+		};
+		95DF66102C19DCDA0035116E /* ContactsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				95DF66182C1B5EC10035116E /* Model */,
+				95DF66172C1B5E9D0035116E /* Components */,
+				95DF660E2C19DCD30035116E /* ContactsScreen.swift */,
+			);
+			path = ContactsScreen;
+			sourceTree = "<group>";
+		};
+		95DF66172C1B5E9D0035116E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95DF66042C19A58C0035116E /* ContactCardView.swift */,
+				95DF66022C19A5040035116E /* ContactAvatarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		95DF66182C1B5EC10035116E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95DF66002C19929D0035116E /* ContactCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95DF66192C1B5F0E0035116E /* ProfileAcountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				95DF66152C1B5E6D0035116E /* ProfileAccountScreen.swift */,
+				95DF661A2C1B64160035116E /* ProfileAccountButtonsView.swift */,
+			);
+			path = ProfileAcountScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		95470D192C2A9F5B009A5D1A /* WBMessagerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95470D2E2C2A9F5E009A5D1A /* Build configuration list for PBXNativeTarget "WBMessagerWidgetExtension" */;
+			buildPhases = (
+				95470D162C2A9F5B009A5D1A /* Sources */,
+				95470D172C2A9F5B009A5D1A /* Frameworks */,
+				95470D182C2A9F5B009A5D1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBMessagerWidgetExtension;
+			productName = WBMessagerWidgetExtension;
+			productReference = 95470D1A2C2A9F5B009A5D1A /* WBMessagerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		95470D4F2C2AD122009A5D1A /* WBMessagerIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95470D5A2C2AD122009A5D1A /* Build configuration list for PBXNativeTarget "WBMessagerIntent" */;
+			buildPhases = (
+				95470D4C2C2AD122009A5D1A /* Sources */,
+				95470D4D2C2AD122009A5D1A /* Frameworks */,
+				95470D4E2C2AD122009A5D1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBMessagerIntent;
+			productName = WBMessagerIntent;
+			productReference = 95470D502C2AD122009A5D1A /* WBMessagerIntent.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		956E4E242C11BBF700234577 /* WBMessager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 956E4E332C11BBF800234577 /* Build configuration list for PBXNativeTarget "WBMessager" */;
@@ -77,10 +372,14 @@
 				956E4E212C11BBF700234577 /* Sources */,
 				956E4E222C11BBF700234577 /* Frameworks */,
 				956E4E232C11BBF700234577 /* Resources */,
+				956001532C29503200063371 /* Embed Foundation Extensions */,
+				95470D4B2C2ACF39009A5D1A /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				95470D2C2C2A9F5E009A5D1A /* PBXTargetDependency */,
+				95470D582C2AD122009A5D1A /* PBXTargetDependency */,
 			);
 			name = WBMessager;
 			productName = WBMessager;
@@ -97,6 +396,12 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					95470D192C2A9F5B009A5D1A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					95470D4F2C2AD122009A5D1A = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					956E4E242C11BBF700234577 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -116,11 +421,29 @@
 			projectRoot = "";
 			targets = (
 				956E4E242C11BBF700234577 /* WBMessager */,
+				95470D192C2A9F5B009A5D1A /* WBMessagerWidgetExtension */,
+				95470D4F2C2AD122009A5D1A /* WBMessagerIntent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		95470D182C2A9F5B009A5D1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95470D392C2AAF74009A5D1A /* Assets.xcassets in Resources */,
+				95470D272C2A9F5E009A5D1A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95470D4E2C2AD122009A5D1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		956E4E232C11BBF700234577 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +456,186 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		95470D162C2A9F5B009A5D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95470D332C2AACD8009A5D1A /* ContactCardModel.swift in Sources */,
+				95470D382C2AAD2A009A5D1A /* DateExtension.swift in Sources */,
+				95470D222C2A9F5C009A5D1A /* WBMessagerWidgetBundle.swift in Sources */,
+				95470D242C2A9F5C009A5D1A /* WBMessagerWidget.swift in Sources */,
+				95470D362C2AACF5009A5D1A /* ContactCardView.swift in Sources */,
+				95470D292C2A9F5E009A5D1A /* WBMessagerWidget.intentdefinition in Sources */,
+				95470D352C2AACF2009A5D1A /* ContactAvatarView.swift in Sources */,
+				95470D372C2AAD03009A5D1A /* TypographyExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95470D4C2C2AD122009A5D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95470D652C2AD595009A5D1A /* ProfileAccountScreen.swift in Sources */,
+				95470D602C2AD514009A5D1A /* ContactsScreen.swift in Sources */,
+				95470D662C2AD597009A5D1A /* ProfileAccountButtonsView.swift in Sources */,
+				95470D672C2AD5A7009A5D1A /* ContactCardView.swift in Sources */,
+				95470D682C2AD5BB009A5D1A /* ContactAvatarView.swift in Sources */,
+				95470D642C2AD57F009A5D1A /* DateExtension.swift in Sources */,
+				95470D532C2AD122009A5D1A /* WBMessagerIntentExtension.swift in Sources */,
+				95470D632C2AD57D009A5D1A /* TypographyExtension.swift in Sources */,
+				95470D612C2AD52B009A5D1A /* ContactCardModel.swift in Sources */,
+				95470D552C2AD122009A5D1A /* WBMessagerIntent.swift in Sources */,
+				95470D622C2AD576009A5D1A /* SearchBarView.swift in Sources */,
+				95470D5D2C2AD2D6009A5D1A /* BottomNavigationView.swift in Sources */,
+				95470D5F2C2AD511009A5D1A /* MoreScreen.swift in Sources */,
+				95470D5E2C2AD50E009A5D1A /* ChatsScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		956E4E212C11BBF700234577 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956E4E2B2C11BBF700234577 /* ContentView.swift in Sources */,
+				95DF66092C19B98B0035116E /* BottomNavigationView.swift in Sources */,
+				95D479502C208FDF000B3E1E /* DateExtension.swift in Sources */,
+				95470D2A2C2A9F5E009A5D1A /* WBMessagerWidget.intentdefinition in Sources */,
+				95DF661B2C1B64160035116E /* ProfileAccountButtonsView.swift in Sources */,
+				956E4E3A2C12ECD200234577 /* ActionButtonView.swift in Sources */,
+				95DF66162C1B5E6D0035116E /* ProfileAccountScreen.swift in Sources */,
+				95D4794D2C20462C000B3E1E /* UserAgreementView.swift in Sources */,
+				95DF66052C19A58C0035116E /* ContactCardView.swift in Sources */,
+				95DF66072C19AEAF0035116E /* SearchBarView.swift in Sources */,
+				956E4E2B2C11BBF700234577 /* WalkthroughScreen.swift in Sources */,
+				95470D322C2AA7CB009A5D1A /* WBMessagerWidget.swift in Sources */,
+				95DF66012C19929D0035116E /* ContactCardModel.swift in Sources */,
+				95DF66142C1B0B930035116E /* MoreScreen.swift in Sources */,
+				95DF660F2C19DCD30035116E /* ContactsScreen.swift in Sources */,
+				95DF66122C1B0B520035116E /* ChatsScreen.swift in Sources */,
+				95DF65FD2C13222D0035116E /* TypographyExtension.swift in Sources */,
+				95DF66032C19A5040035116E /* ContactAvatarView.swift in Sources */,
+				956E4E3C2C130A6F00234577 /* VerificationScreen.swift in Sources */,
 				956E4E292C11BBF700234577 /* WBMessagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		95470D2C2C2A9F5E009A5D1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95470D192C2A9F5B009A5D1A /* WBMessagerWidgetExtension */;
+			targetProxy = 95470D2B2C2A9F5E009A5D1A /* PBXContainerItemProxy */;
+		};
+		95470D582C2AD122009A5D1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95470D4F2C2AD122009A5D1A /* WBMessagerIntent */;
+			targetProxy = 95470D572C2AD122009A5D1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		95470D2F2C2A9F5E009A5D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WBMessagerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WBMessagerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anna-Plotnikova.WBMessager.WBMessagerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95470D302C2A9F5E009A5D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WBMessagerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WBMessagerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anna-Plotnikova.WBMessager.WBMessagerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95470D5B2C2AD122009A5D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WBMessagerIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WBMessagerIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anna-Plotnikova.WBMessager.WBMessagerIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95470D5C2C2AD122009A5D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WBMessagerIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WBMessagerIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anna-Plotnikova.WBMessager.WBMessagerIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		956E4E312C11BBF800234577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -262,6 +753,7 @@
 		956E4E342C11BBF800234577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -274,6 +766,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +783,7 @@
 		956E4E352C11BBF800234577 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +796,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +813,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		95470D2E2C2A9F5E009A5D1A /* Build configuration list for PBXNativeTarget "WBMessagerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95470D2F2C2A9F5E009A5D1A /* Debug */,
+				95470D302C2A9F5E009A5D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95470D5A2C2AD122009A5D1A /* Build configuration list for PBXNativeTarget "WBMessagerIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95470D5B2C2AD122009A5D1A /* Debug */,
+				95470D5C2C2AD122009A5D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		956E4E202C11BBF700234577 /* Build configuration list for PBXProject "WBMessager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
