@@ -34,6 +34,8 @@ struct BottomNavigationView: View {
     
     @State private var selectedTab: Tabs = .contacts
     
+    static let shared: BottomNavigationView = .init()
+    
     var body: some View {
         
         TabView(selection: $selectedTab) {
@@ -51,6 +53,10 @@ struct BottomNavigationView: View {
             }.tag(Tabs.more)
         }
         .shadow(color: Color.black.opacity(0.04), radius: 24)
+    }
+    
+    func moveToTab(tab: Tabs) {
+        selectedTab = tab
     }
 }
     

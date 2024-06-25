@@ -63,9 +63,9 @@ struct ContactsScreen: View {
                         }
                     }
                 }
-                
             }
             .background(Color("AppBackgroundColor"))
+            
         }
     }
 }
