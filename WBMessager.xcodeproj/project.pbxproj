@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95470D692C2BF93C009A5D1A /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		956E4E252C11BBF700234577 /* WBMessager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBMessager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956E4E282C11BBF700234577 /* WBMessagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessagerApp.swift; sourceTree = "<group>"; };
 		956E4E2A2C11BBF700234577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		956E4E1C2C11BBF700234577 = {
 			isa = PBXGroup;
 			children = (
+				95470D692C2BF93C009A5D1A /* Factory.playground */,
 				956E4E272C11BBF700234577 /* WBMessager */,
 				956E4E262C11BBF700234577 /* Products */,
 			);
