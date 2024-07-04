@@ -17,18 +17,18 @@ struct WalkthroughScreen: View {
                 .padding(.top, 135)
                 .padding(.horizontal, 62)
             
-            Text("Общайтесь с друзьями \n и близкими легко")
+            Text(UI.Strings.welcomeMessage)
                 .font(.heading2())
-                .foregroundColor(Color("FontTextColor"))
+                .foregroundColor(Color.designColor.fontText)
                 .multilineTextAlignment(.center)
                 .padding(.top, 42)
                 .padding(.horizontal, 48)
             
             Spacer()
             
-            Text("Нажимая кнопку продолжить я соглашаюсь с")
+            Text(UI.Strings.userAgreement)
                 .font(.metadata2())
-                .foregroundColor(Color("DisabledTextColor"))
+                .foregroundColor(Color.designColor.disabledText)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
@@ -36,7 +36,7 @@ struct WalkthroughScreen: View {
                 .padding(.horizontal, 24)
             
         
-            ActionButtonView(title: "Начать общаться") {}
+            ActionButtonView(title: UI.Strings.actionButtonText) {}
             
         }
     }

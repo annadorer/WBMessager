@@ -1,8 +1,8 @@
 //
-//  TextExtension.swift
+//  Typography+Extension.swift
 //  WBMessager
 //
-//  Created by Anna on 07.06.2024.
+//  Created by Anna on 03.07.2024.
 //
 
 import SwiftUI

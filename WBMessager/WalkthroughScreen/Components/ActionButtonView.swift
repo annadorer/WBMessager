@@ -22,8 +22,8 @@ struct ActionButtonView: View {
         .frame(width: 327, height: 52)
         .font(.subHeading2())
         .multilineTextAlignment(.center)
-        .foregroundColor(Color("ActionButtonTextColor"))
-        .background(Color("ActionButtonColor"))
+        .foregroundColor(Color.designColor.actionButtonText)
+        .background(Color.designColor.actionButton)
         .cornerRadius(30)
         .padding(.horizontal, 24)
         .sheet(isPresented: $isVerificationSheetPresented) {
@@ -34,6 +34,6 @@ struct ActionButtonView: View {
 
 struct ActionButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ActionButtonView(title: "Начать общаться") {}
+        ActionButtonView(title: UI.Strings.actionButtonText) {}
     }
 }
