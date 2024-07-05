@@ -12,22 +12,22 @@ struct UserAgreementView: View {
     var body: some View {
         HStack(spacing: 0) {
             
-           textArrangement(text: "Политикой Конфиденциальности")
+            textArrangement(text: UI.Strings.privacyPolicy)
                 .onTapGesture {
                     //TODO
                 }
             
             Text("и ")
                 .font(.metadata2())
-                .foregroundColor(Color("DisabledTextColor"))
+                .foregroundColor(Color.designColor.disabledText)
                 .multilineTextAlignment(.center)
                 .padding(.top, 5)
                 .padding(.bottom, 13)
             
-            textArrangement(text: "Условиями Использования")
-                 .onTapGesture {
-                     //TODO
-                 }
+            textArrangement(text: UI.Strings.termsOfUse)
+                .onTapGesture {
+                    //TODO
+                }
         }
     }
     
@@ -35,11 +35,10 @@ struct UserAgreementView: View {
         HStack(spacing: 0) {
             Text(text)
                 .font(.metadata2())
-                .foregroundColor(Color("ActionButtonColor"))
+                .foregroundColor(Color.designColor.actionButton)
                 .multilineTextAlignment(.center)
                 .padding(.top, 5)
                 .padding(.bottom, 13)
-            
         }
     }
 }
