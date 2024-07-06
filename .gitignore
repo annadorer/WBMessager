@@ -1,0 +1,66 @@
+# Xcode
+.DS_Store
+*.swp
+*.lock
+*~
+.profile
+.Thumbs.db
+
+# User-specific files
+*.xcuserstate
+
+# Build
+build/
+DerivedData/
+.idea/
+
+# Xcode specific
+xcuserdata/
+*.xcworkspace
+*.xccheckout
+*.moved-aside
+*.xcuserdatad
+
+# Swift Package Manager
+.build/
+Packages/
+.swiftpm/xcode/xcshareddata/swiftpm/Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Code Injection
+.ci/
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Temporary files
+*.tmp
+*.temp
+
+# Archives
+*.xcarchive
+
+# Bundler
+/.bundle/
+
+# Static analysis
+.swiftlint.yml
+.swiftformat
