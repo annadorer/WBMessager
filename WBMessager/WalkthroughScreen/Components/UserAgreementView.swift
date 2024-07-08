@@ -35,7 +35,7 @@ struct UserAgreementView: View {
         HStack(spacing: 0) {
             Text(text)
                 .font(.metadata2())
-                .foregroundColor(Color.designColor.actionButton)
+                .foregroundColor(Color.designColor.button)
                 .multilineTextAlignment(.center)
                 .padding(.top, 5)
                 .padding(.bottom, 13)

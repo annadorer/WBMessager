@@ -12,12 +12,18 @@ extension Color {
 static let designColor = DesignColor()
     
     struct DesignColor {
-        let actionButton = Color("ActionButtonColor")
-        let actionButtonText = Color("ActionButtonTextColor")
+        let button = Color("ButtonColor")
+        let buttonText = Color("ButtonTextColor")
         let appBackground = Color("AppBackgroundColor")
         let appSecondaryBackground = Color("AppSecondaryBackgroundColor")
         let contactAvatar = Color("ContactAvatar")
         let disabledText = Color("DisabledTextColor")
         let fontText = Color("FontTextColor")
+        let firstGradientLightColor = Color("FirstGradientLightColor")
+        let secondGradientLightColor = Color("SecondGradientLightColor")
+        let firstGradientDarkColor = Color("FirstGradientDarkColor")
+        let secondGradientDarkColor = Color("SecondGradientDarkColor")
+        let divider = Color("DividerColor")
+        let disabledButton = Color("DisabledButtonColor")
     }
 }

@@ -15,5 +15,7 @@ enum UI {
         static let userAgreement = "user_agreement".localized
         static let privacyPolicy = "privacy_policy".localized
         static let termsOfUse = "terms_of_use".localized
+        static let inputPhoneNumber = "input_phone_number".localized
+        static let sendingCode = "sending_code".localized
     }
 }
