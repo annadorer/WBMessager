@@ -20,11 +20,11 @@ struct ContactCardView: View {
                 
                 Text(contact.name)
                     .font(.bodyText1())
-                    .foregroundColor(Color("FontTextColor"))
+                    .foregroundColor(Color.designColor.fontText)
                 
                 Text(contact.isOnline ? "Online" : contact.lastSeenDate.displayLastSeenDate())
                     .font(.metadata1())
-                    .foregroundColor(Color("DisabledTextColor"))
+                    .foregroundColor(Color.designColor.disabledText)
             }
         }
         .padding(.top, 16)

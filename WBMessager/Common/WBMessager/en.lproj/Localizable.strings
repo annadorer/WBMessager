@@ -10,3 +10,5 @@
 "user_agreement" = "By clicking continue I agree to";
 "privacy_policy" = "Privacy Policy";
 "terms_of_use" = "Terms of Use";
+"input_phone_number" = "Enter your phone number";
+"sending_code" = "We will send a confirmation code \n to the specified phone number";

@@ -17,13 +17,13 @@ struct ContactAvatar: View {
             if contact.image != nil {
                 if contact.hasStory {
                     contactImage(image: contact.image!)
-                        .background(storyBorder(gradientColors: [Color("FirstGradientLightColor"), Color("FirstGradientDarkColor")]))
+                        .background(storyBorder(gradientColors: [Color.designColor.firstGradientLightColor, Color.designColor.firstGradientDarkColor]))
                 } else {
                     contactImage(image: contact.image!) }
             } else {
                 if contact.hasStory {
                     emptyContactImage(initials: contact.initials)
-                        .background(storyBorder(gradientColors: [Color("SecondGradientLightColor"), Color("SecondGradientDarkColor")]))
+                        .background(storyBorder(gradientColors: [Color.designColor.secondGradientLightColor, Color.designColor.secondGradientDarkColor]))
                 } else {
                     emptyContactImage(initials: contact.initials)
                 }
@@ -48,7 +48,7 @@ struct ContactAvatar: View {
         Text(initials)
             .foregroundColor(.white)
             .frame(width: 48, height: 48)
-            .background(Color("ContactAvatar"))
+            .background(Color.designColor.contactAvatar)
             .clipShape(RoundedRectangle(cornerRadius: 16))
             .fontWeight(.bold)
     }

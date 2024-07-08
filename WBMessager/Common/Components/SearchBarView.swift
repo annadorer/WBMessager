@@ -19,12 +19,12 @@ struct SearchBarView: View {
             
             TextField("Search", text: $search)
                 .frame(width: 327, height: 36)
-                .foregroundColor(Color("DisabledTextColor"))
+                .foregroundColor(Color.designColor.disabledText)
                 .font(.bodyText1())
         }
         .background(
             RoundedRectangle(cornerRadius: 4)
-                .fill(Color("AppSecondaryBackgroundColor")))
+                .fill(Color.designColor.appSecondaryBackground))
     }
 }
 

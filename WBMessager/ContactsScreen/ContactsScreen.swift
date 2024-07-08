@@ -43,7 +43,7 @@ struct ContactsScreen: View {
                         }
                         
                         Divider()
-                            .background(Color("DividerColor"))
+                            .background(Color.designColor.divider)
                             .padding(.horizontal, 24)
                     }
                 }
@@ -52,7 +52,7 @@ struct ContactsScreen: View {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Text("Контакты")
                             .font(.subHeading1())
-                            .foregroundColor(Color("FontTextColor"))
+                            .foregroundColor(Color.designColor.fontText)
                     }
                     
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -65,7 +65,7 @@ struct ContactsScreen: View {
                 }
                 
             }
-            .background(Color("AppBackgroundColor"))
+            .background(Color.designColor.appBackground)
         }
     }
 }

@@ -26,12 +26,12 @@ struct ProfileAccountScreen: View {
                 
                 Text(contact.name)
                     .font(.heading2())
-                    .foregroundColor(Color("FontTextColor"))
+                    .foregroundColor(Color.designColor.fontText)
                     .padding(.top, 20)
                 
                 Text(contact.phoneNumber)
                     .font(.subHeading2())
-                    .foregroundColor(Color("DisabledTextColor"))
+                    .foregroundColor(Color.designColor.disabledText)
                     .padding(.top, 4)
                     .padding(.horizontal, 116)
                 
@@ -52,7 +52,7 @@ struct ProfileAccountScreen: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Text("Профиль")
                         .font(.subHeading1())
-                        .foregroundColor(Color("FontTextColor"))
+                        .foregroundColor(Color.designColor.fontText)
                 }
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -65,7 +65,7 @@ struct ProfileAccountScreen: View {
             }
             
         }
-        .background(Color("AppBackgroundColor"))
+        .background(Color.designColor.appBackground)
     }
 }
 

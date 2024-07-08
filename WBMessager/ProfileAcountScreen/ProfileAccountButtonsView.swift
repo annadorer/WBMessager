@@ -24,7 +24,7 @@ struct ProfileAccountButtonsView: View {
             }
             .frame(width: 71, height: 40)
             .overlay(RoundedRectangle(cornerRadius: 25)
-                .stroke(Color("ActionButtonColor"), lineWidth: 1.67))
+                .stroke(Color.designColor.button, lineWidth: 1.67))
         }
         .padding(.top, 40)
         .padding(.horizontal, 26)
