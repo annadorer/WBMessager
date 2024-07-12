@@ -25,7 +25,6 @@ struct EndlessLoadAnimation: View {
     }
 }
 
-
 struct Animation_Previews: PreviewProvider {
     static var previews: some View {
         EndlessLoadAnimation()

@@ -10,14 +10,14 @@ import SwiftUI
 struct VerificationPhoneNumberScreen: View {
     
     @Environment(\.presentationMode) var backButton
+    @State var phoneNumber: String = ""
     @State var isButtonDisabled = true
-    @State var isAnimated = false
     
     var body: some View {
-        VStack(spacing: 0) {
-            if isAnimated {
-                EndlessLoadAnimation()
-            } else {
+        
+        NavigationStack {
+            
+            VStack(spacing: 0) {
                 
                 Text(UI.Strings.inputPhoneNumber)
                     .font(.heading2())
@@ -38,26 +38,26 @@ struct VerificationPhoneNumberScreen: View {
                 
                 Spacer()
                 
-                Button("Продолжить") {
-                    isAnimated = true
+                Button(action: {}, label: {
+                    NavigationLink(UI.Strings.actionButtonText, destination: VerificationCodeScreen(OTPData: OTPModel(phoneNumber: phoneNumber, code: "")))
+                })
+                    .disabled(isButtonDisabled)
+                    .buttonStyle(ActionButtonStyle())
+                    .padding(.bottom, 60)
                 }
-                .padding(.bottom, 60)
-                .disabled(isButtonDisabled)
-                .buttonStyle(ActionButtonStyle())
             }
-        }
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    self.backButton.wrappedValue.dismiss()
-                }) {
-                    Image("BackIcon")
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        self.backButton.wrappedValue.dismiss()
+                    }) {
+                        Image("BackIcon")
+                    }
                 }
             }
         }
     }
-}
 
 struct VerificationScreen_Previews: PreviewProvider {
     static var previews: some View {

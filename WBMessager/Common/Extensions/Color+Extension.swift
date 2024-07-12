@@ -25,5 +25,7 @@ static let designColor = DesignColor()
         let secondGradientDarkColor = Color("SecondGradientDarkColor")
         let divider = Color("DividerColor")
         let disabledButton = Color("DisabledButtonColor")
+        let activeText = Color("ActiveTextColor")
+        let codeField = Color("CodeFieldColor")
     }
 }
