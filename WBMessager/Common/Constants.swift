@@ -17,5 +17,8 @@ enum UI {
         static let termsOfUse = "terms_of_use".localized
         static let inputPhoneNumber = "input_phone_number".localized
         static let sendingCode = "sending_code".localized
+        static let enteringCode = "entering_code".localized
+        static let sentCodeAlready = "sent_code_already".localized
+        static let requestCodeAgain = "request_code_again".localized
     }
 }
