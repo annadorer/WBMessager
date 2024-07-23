@@ -6,20 +6,20 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct VerificationCodeScreen: View {
     
     @Environment(\.presentationMode) var backButton
     
     let OTPData: OTPModel
-    //var requestCodeAgain: OTPIterator
     
     var body: some View {
         NavigationStack {
             
             VStack(spacing: 0) {
                 
-                CodeInformationView(inputNumber: .constant("+7 999 999-99-99"))
+                CodeCaptionView(inputNumber: .constant("+7 999 999-99-99"))
                 
                 CodeInputView(authData: OTPModel(phoneNumber: OTPData.phoneNumber, code: OTPData.code))
                 
@@ -32,7 +32,6 @@ struct VerificationCodeScreen: View {
                     .padding(.horizontal, 68)
                     .padding(.bottom, 60)
                     .onTapGesture {
-                        //self.requestCodeAgain.next()
                     }
             }
         }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct ProfileAccountScreen: View {
     
@@ -35,7 +36,7 @@ struct ProfileAccountScreen: View {
                     .padding(.top, 4)
                     .padding(.horizontal, 116)
                 
-                ProfileAccountButtonsView()
+                SocialMediaButtons(icons: [Image.designIcon.facebook, Image.designIcon.instagram, Image.designIcon.linkedIn, Image.designIcon.x])
                 
                 Spacer()
             }
