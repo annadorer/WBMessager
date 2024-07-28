@@ -10,30 +10,39 @@ import UISystem
 
 struct ContactAvatar: View {
     
+    @StateObject private var loader = AsyncImageLoader()
+    
     let contact: ContactCardModel
     
     var body: some View {
-
-        ZStack(alignment: .topTrailing) {
-            if contact.image != nil {
-                if contact.hasStory {
-                    contactImage(image: contact.image!)
-                        .background(storyBorder(gradientColors: [Color.designColor.firstGradientLightColor, Color.designColor.firstGradientDarkColor]))
-                } else {
-                    contactImage(image: contact.image!) }
-            } else {
-                if contact.hasStory {
-                    emptyContactImage(initials: contact.initials)
-                        .background(storyBorder(gradientColors: [Color.designColor.secondGradientLightColor, Color.designColor.secondGradientDarkColor]))
-                } else {
-                    emptyContactImage(initials: contact.initials)
+        Group {
+            if loader.image != nil {
+                ZStack(alignment: .topTrailing) {
+                    if contact.image != nil {
+                        if contact.hasStory {
+                            contactImage(image: contact.image!)
+                                .background(storyBorder(gradientColors: [Color.designColor.firstGradientLightColor, Color.designColor.firstGradientDarkColor]))
+                        } else {
+                            contactImage(image: contact.image!) }
+                    } else {
+                        if contact.hasStory {
+                            emptyContactImage(initials: contact.initials)
+                                .background(storyBorder(gradientColors: [Color.designColor.secondGradientLightColor, Color.designColor.secondGradientDarkColor]))
+                        } else {
+                            emptyContactImage(initials: contact.initials)
+                        }
+                    }
+                    if contact.isOnline {
+                        Image("ContactStatusImage")
+                            .offset(x: 4, y: -4)
+                    }
                 }
+            } else {
+                ProgressView()
             }
-            
-            if contact.isOnline {
-                Image("ContactStatusImage")
-                    .offset(x: 4, y: -4)
-            }
+        }
+        .onAppear {
+            loader.loadImage(assetImageName: contact.image ?? "")
         }
     }
     
@@ -56,9 +65,8 @@ struct ContactAvatar: View {
     
     private func storyBorder(gradientColors: [Color]) -> some View {
         RoundedRectangle(cornerRadius: 16)
-                .strokeBorder(LinearGradient(colors: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2)
-                .frame(width: 54, height: 54)
-        
+            .strokeBorder(LinearGradient(colors: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2)
+            .frame(width: 54, height: 54)
     }
 }
 
