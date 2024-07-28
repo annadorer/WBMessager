@@ -19,6 +19,7 @@
 		953ADDBC2C4E501200051DD6 /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 953ADDBB2C4E501200051DD6 /* UISystem */; };
 		953ADDBE2C4E53FB00051DD6 /* BottomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953ADDBD2C4E53FB00051DD6 /* BottomNavigationView.swift */; };
 		953ADDC02C4E5ECF00051DD6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953ADDBF2C4E5ECF00051DD6 /* Media.xcassets */; };
+		955343692C56235C0091D3E4 /* AsyncImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955343682C56235C0091D3E4 /* AsyncImageLoader.swift */; };
 		956C2A792C3D2782004F80D9 /* VerificationCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A782C3D2782004F80D9 /* VerificationCodeScreen.swift */; };
 		956C2A7E2C3E7062004F80D9 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A7D2C3E7062004F80D9 /* CodeInputView.swift */; };
 		956C2A802C3E709C004F80D9 /* OTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A7F2C3E709C004F80D9 /* OTPModel.swift */; };
@@ -50,6 +51,7 @@
 		953ADDB92C4E4FD600051DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		953ADDBD2C4E53FB00051DD6 /* BottomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationView.swift; sourceTree = "<group>"; };
 		953ADDBF2C4E5ECF00051DD6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		955343682C56235C0091D3E4 /* AsyncImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageLoader.swift; sourceTree = "<group>"; };
 		956C2A782C3D2782004F80D9 /* VerificationCodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeScreen.swift; sourceTree = "<group>"; };
 		956C2A7D2C3E7062004F80D9 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		956C2A7F2C3E709C004F80D9 /* OTPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPModel.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				952A386A2C38795400BBB790 /* ContactsScreen.swift */,
 				952A386B2C38795400BBB790 /* Components */,
 				952A386E2C38795400BBB790 /* Model */,
+				955343682C56235C0091D3E4 /* AsyncImageLoader.swift */,
 			);
 			path = ContactsScreen;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				956C2A792C3D2782004F80D9 /* VerificationCodeScreen.swift in Sources */,
 				956E4E2B2C11BBF700234577 /* WalkthroughScreen.swift in Sources */,
 				95B4402A2C3BE28700129D83 /* PhoneNumberInputView.swift in Sources */,
+				955343692C56235C0091D3E4 /* AsyncImageLoader.swift in Sources */,
 				956C2A802C3E709C004F80D9 /* OTPModel.swift in Sources */,
 				956E4E3C2C130A6F00234577 /* VerificationPhoneNumberScreen.swift in Sources */,
 				95B440262C3BD96900129D83 /* CountryModel.swift in Sources */,
