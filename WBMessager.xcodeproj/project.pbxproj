@@ -20,6 +20,7 @@
 		953ADDBE2C4E53FB00051DD6 /* BottomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953ADDBD2C4E53FB00051DD6 /* BottomNavigationView.swift */; };
 		953ADDC02C4E5ECF00051DD6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953ADDBF2C4E5ECF00051DD6 /* Media.xcassets */; };
 		955343692C56235C0091D3E4 /* AsyncImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955343682C56235C0091D3E4 /* AsyncImageLoader.swift */; };
+		955344C62C5FEF5F0091D3E4 /* ExyteChat in Frameworks */ = {isa = PBXBuildFile; productRef = 955344C52C5FEF5F0091D3E4 /* ExyteChat */; };
 		956C2A792C3D2782004F80D9 /* VerificationCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A782C3D2782004F80D9 /* VerificationCodeScreen.swift */; };
 		956C2A7E2C3E7062004F80D9 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A7D2C3E7062004F80D9 /* CodeInputView.swift */; };
 		956C2A802C3E709C004F80D9 /* OTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A7F2C3E709C004F80D9 /* OTPModel.swift */; };
@@ -74,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955344C62C5FEF5F0091D3E4 /* ExyteChat in Frameworks */,
 				953ADDBC2C4E501200051DD6 /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +296,7 @@
 			name = WBMessager;
 			packageProductDependencies = (
 				953ADDBB2C4E501200051DD6 /* UISystem */,
+				955344C52C5FEF5F0091D3E4 /* ExyteChat */,
 			);
 			productName = WBMessager;
 			productReference = 956E4E252C11BBF700234577 /* WBMessager.app */;
@@ -324,6 +327,9 @@
 				Base,
 			);
 			mainGroup = 956E4E1C2C11BBF700234577;
+			packageReferences = (
+				955344C42C5FEF5F0091D3E4 /* XCRemoteSwiftPackageReference "Chat" */,
+			);
 			productRefGroup = 956E4E262C11BBF700234577 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -525,7 +531,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -556,7 +562,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,10 +599,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		955344C42C5FEF5F0091D3E4 /* XCRemoteSwiftPackageReference "Chat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/Chat.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		953ADDBB2C4E501200051DD6 /* UISystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UISystem;
+		};
+		955344C52C5FEF5F0091D3E4 /* ExyteChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 955344C42C5FEF5F0091D3E4 /* XCRemoteSwiftPackageReference "Chat" */;
+			productName = ExyteChat;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
