@@ -21,6 +21,7 @@
 		953ADDC02C4E5ECF00051DD6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953ADDBF2C4E5ECF00051DD6 /* Media.xcassets */; };
 		955343692C56235C0091D3E4 /* AsyncImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955343682C56235C0091D3E4 /* AsyncImageLoader.swift */; };
 		955344C62C5FEF5F0091D3E4 /* ExyteChat in Frameworks */ = {isa = PBXBuildFile; productRef = 955344C52C5FEF5F0091D3E4 /* ExyteChat */; };
+		955344D22C62227D0091D3E4 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955344D12C62227D0091D3E4 /* StoriesView.swift */; };
 		956C2A792C3D2782004F80D9 /* VerificationCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A782C3D2782004F80D9 /* VerificationCodeScreen.swift */; };
 		956C2A7E2C3E7062004F80D9 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A7D2C3E7062004F80D9 /* CodeInputView.swift */; };
 		956C2A802C3E709C004F80D9 /* OTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C2A7F2C3E709C004F80D9 /* OTPModel.swift */; };
@@ -35,6 +36,9 @@
 		95B4402A2C3BE28700129D83 /* PhoneNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B440292C3BE28700129D83 /* PhoneNumberInputView.swift */; };
 		95B4402E2C3C305700129D83 /* EndlessLoadAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B4402D2C3C305700129D83 /* EndlessLoadAnimation.swift */; };
 		95D4794D2C20462C000B3E1E /* UserAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D4794C2C20462C000B3E1E /* UserAgreementView.swift */; };
+		95FD9A9B2C6266BB00CAAEE6 /* ChatCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD9A9A2C6266BB00CAAEE6 /* ChatCardView.swift */; };
+		95FD9A9D2C6266F900CAAEE6 /* ChatCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD9A9C2C6266F900CAAEE6 /* ChatCardModel.swift */; };
+		95FD9AA32C62869F00CAAEE6 /* PersonalChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD9AA22C62869F00CAAEE6 /* PersonalChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,7 @@
 		953ADDBD2C4E53FB00051DD6 /* BottomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationView.swift; sourceTree = "<group>"; };
 		953ADDBF2C4E5ECF00051DD6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		955343682C56235C0091D3E4 /* AsyncImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageLoader.swift; sourceTree = "<group>"; };
+		955344D12C62227D0091D3E4 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		956C2A782C3D2782004F80D9 /* VerificationCodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeScreen.swift; sourceTree = "<group>"; };
 		956C2A7D2C3E7062004F80D9 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		956C2A7F2C3E709C004F80D9 /* OTPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPModel.swift; sourceTree = "<group>"; };
@@ -68,6 +73,9 @@
 		95B440292C3BE28700129D83 /* PhoneNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputView.swift; sourceTree = "<group>"; };
 		95B4402D2C3C305700129D83 /* EndlessLoadAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessLoadAnimation.swift; sourceTree = "<group>"; };
 		95D4794C2C20462C000B3E1E /* UserAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementView.swift; sourceTree = "<group>"; };
+		95FD9A9A2C6266BB00CAAEE6 /* ChatCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCardView.swift; sourceTree = "<group>"; };
+		95FD9A9C2C6266F900CAAEE6 /* ChatCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCardModel.swift; sourceTree = "<group>"; };
+		95FD9AA22C62869F00CAAEE6 /* PersonalChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		955344D02C6222460091D3E4 /* ChatsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				952A38812C387FE500BBB790 /* ChatsScreen.swift */,
+				95FD9AA02C62866B00CAAEE6 /* Model */,
+				95FD9A992C62661A00CAAEE6 /* Components */,
+			);
+			path = ChatsScreen;
+			sourceTree = "<group>";
+		};
 		956C2A7A2C3E669F004F80D9 /* VerificationCodeScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,12 +207,13 @@
 		956E4E272C11BBF700234577 /* WBMessager */ = {
 			isa = PBXGroup;
 			children = (
+				95FD9AA12C62868400CAAEE6 /* PersonalChatScreen */,
+				955344D02C6222460091D3E4 /* ChatsScreen */,
 				953ADDB92C4E4FD600051DD6 /* Info.plist */,
 				953ADDBF2C4E5ECF00051DD6 /* Media.xcassets */,
 				953ADDB72C4E41A800051DD6 /* Modules */,
 				956C2A7A2C3E669F004F80D9 /* VerificationCodeScreen */,
 				952A38802C387FE500BBB790 /* MoreScreen.swift */,
-				952A38812C387FE500BBB790 /* ChatsScreen.swift */,
 				952A38742C387A3A00BBB790 /* ProfileAcountScreen */,
 				952A38692C38795400BBB790 /* ContactsScreen */,
 				956E4E282C11BBF700234577 /* WBMessagerApp.swift */,
@@ -276,6 +295,31 @@
 				956E4E3B2C130A6F00234577 /* VerificationPhoneNumberScreen.swift */,
 			);
 			path = VerificationPhoneNumberScreen;
+			sourceTree = "<group>";
+		};
+		95FD9A992C62661A00CAAEE6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				955344D12C62227D0091D3E4 /* StoriesView.swift */,
+				95FD9A9A2C6266BB00CAAEE6 /* ChatCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		95FD9AA02C62866B00CAAEE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95FD9A9C2C6266F900CAAEE6 /* ChatCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95FD9AA12C62868400CAAEE6 /* PersonalChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				95FD9AA22C62869F00CAAEE6 /* PersonalChatView.swift */,
+			);
+			path = PersonalChatScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,11 +404,13 @@
 				952A38722C38795400BBB790 /* ContactAvatarView.swift in Sources */,
 				953ADDBE2C4E53FB00051DD6 /* BottomNavigationView.swift in Sources */,
 				952A387A2C387A6E00BBB790 /* Date+Extension.swift in Sources */,
+				95FD9A9D2C6266F900CAAEE6 /* ChatCardModel.swift in Sources */,
 				952A38702C38795400BBB790 /* ContactsScreen.swift in Sources */,
 				95B4402E2C3C305700129D83 /* EndlessLoadAnimation.swift in Sources */,
 				952A38712C38795400BBB790 /* ContactCardView.swift in Sources */,
 				952A38772C387A3B00BBB790 /* ProfileAccountScreen.swift in Sources */,
 				952A38732C38795400BBB790 /* ContactCardModel.swift in Sources */,
+				955344D22C62227D0091D3E4 /* StoriesView.swift in Sources */,
 				9575D5B82C3583A20043D24D /* String+Extension.swift in Sources */,
 				956C2A7E2C3E7062004F80D9 /* CodeInputView.swift in Sources */,
 				95D4794D2C20462C000B3E1E /* UserAgreementView.swift in Sources */,
@@ -377,9 +423,11 @@
 				956E4E3C2C130A6F00234577 /* VerificationPhoneNumberScreen.swift in Sources */,
 				95B440262C3BD96900129D83 /* CountryModel.swift in Sources */,
 				956E4E292C11BBF700234577 /* WBMessagerApp.swift in Sources */,
+				95FD9AA32C62869F00CAAEE6 /* PersonalChatView.swift in Sources */,
 				952A38822C387FE600BBB790 /* MoreScreen.swift in Sources */,
 				9575D5BA2C3584620043D24D /* Constants.swift in Sources */,
 				9594A4DA2C4F93C80036AC6A /* CodeCaptionView.swift in Sources */,
+				95FD9A9B2C6266BB00CAAEE6 /* ChatCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,7 @@ public struct SearchBarView: View {
             Image.designIcon.search
                 .padding(.leading, 8)
             
-            TextField("Search", text: $search)
+            TextField("Поиск", text: $search)
                 .frame(width: 327, height: 36)
                 .foregroundColor(Color.designColor.disabledText)
                 .font(.bodyText1())

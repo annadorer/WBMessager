@@ -8,7 +8,6 @@
 
 import SwiftUI
 
-
 struct ContactCardModel: Identifiable, Hashable {
     
     let id = UUID()

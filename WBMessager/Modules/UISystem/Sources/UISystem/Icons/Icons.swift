@@ -17,5 +17,6 @@ public extension Image {
         public let x = Image("ProfileAccountX", bundle: .module)
         public let linkedIn = Image("ProfileAccountLinkedIn", bundle: .module)
         public let instagram = Image("ProfileAccountInstagram", bundle: .module)
+        public let newStory = Image("NewStory", bundle: .module)
     }
 }
