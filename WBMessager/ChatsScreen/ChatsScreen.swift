@@ -67,6 +67,7 @@ struct ChatsScreen: View {
                         Button(action: {}) {
                             Image("ListCheck")
                         }
+                        
                     }
                 }
             }

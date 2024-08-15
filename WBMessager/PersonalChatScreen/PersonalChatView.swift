@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import UISystem
+import ExyteChat
 
 struct PersonalChatView: View {
     var body: some View {

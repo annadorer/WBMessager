@@ -42,7 +42,7 @@ struct BottomNavigationView: View {
                 Image(selectedTab == .contacts ? Tabs.contacts.activeIcon : Tabs.contacts.inactiveIcon)
             }.tag(Tabs.contacts)
             
-            ChatsScreen().tabItem {
+            ChatsScreen(searchedChat: "", contacts: .init(name: "", image: "", phoneNumber: "", isOnline: true, hasStory: true, lastSeenDate: Date())).tabItem {
                 Image(selectedTab == .chats ? Tabs.chats.activeIcon : Tabs.chats.inactiveIcon)
             }.tag(Tabs.chats)
             
