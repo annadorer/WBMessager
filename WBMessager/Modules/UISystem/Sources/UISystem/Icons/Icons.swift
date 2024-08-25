@@ -18,5 +18,10 @@ public extension Image {
         public let linkedIn = Image("ProfileAccountLinkedIn", bundle: .module)
         public let instagram = Image("ProfileAccountInstagram", bundle: .module)
         public let newStory = Image("NewStory", bundle: .module)
+        public let back = Image("Back", bundle: .module)
+        public let searchInChat = Image("SearchChat", bundle: .module)
+        public let chatOptions = Image("ChatOptions", bundle: .module)
+        public let sendMessage = Image("SendMessage", bundle: .module)
+        public let addMedia = Image("AddMedia", bundle: .module)
     }
 }

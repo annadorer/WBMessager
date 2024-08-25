@@ -29,5 +29,7 @@ public extension Color {
         public let codeField = Color("CodeFieldColor", bundle: .module)
         public let unreadMessage = Color("UnreadMessage", bundle: .module)
         public let unreadMessageNumber = Color("UnreadMessageNumber", bundle: .module)
+        public let repliedMessageBackground = Color("RepliedMessageBackgroundColor", bundle: .module)
+        public let chatBackground = Color("ChatBackgroundColor", bundle: .module)
     }
 }

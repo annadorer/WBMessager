@@ -8,12 +8,14 @@
 import Foundation
 import ExyteChat
 
-extension User {
+extension MockUser {
     var isCurrentUser: Bool {
         uid == "1"
     }
-    
+}
+
+extension MockUser {
     func toChatUser() -> ExyteChat.User {
-        ExyteChat.User(id: uid, name: name, avatarURL: URL(string: image ?? ""), isCurrentUser: isOnline)
+        ExyteChat.User(id: uid, name: name, avatarURL: avatar, isCurrentUser: isCurrentUser)
     }
 }

@@ -8,11 +8,11 @@
 import Foundation
 import ExyteChat
 
-extension Message {
+extension MockMessage {
     func toChatMessage() -> ExyteChat.Message {
         ExyteChat.Message(
-            id: id,
-            user: user.toChatUser(),
+            id: uid,
+            user: sender.toChatUser(),
             status: status,
             createdAt: createdAt,
             text: text,

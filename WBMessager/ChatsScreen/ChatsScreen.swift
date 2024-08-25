@@ -11,10 +11,9 @@ import UISystem
 
 struct ChatsScreen: View {
     
-    @State var searchedChat: String = ""
-    
-    let contacts: ContactCardModel
-    let chats: [ChatCardModel] = [
+    @State private var searchedChat: String = ""
+     let contacts: ContactCardModel
+     let chats: [ChatCardModel] = [
         .init(message: "че каво", time: "Сегодня", unreadCount: 1),
         .init(message: "Как дела?", time: "17.05", unreadCount: 0),
         .init(message: "Пон, прин", time: "17.05", unreadCount: 1)]
@@ -42,7 +41,7 @@ struct ChatsScreen: View {
             ScrollView(.vertical) {
                 LazyVStack(alignment: .leading) {
                     ForEach(filteredChats, id: \.self) { chat in
-                        NavigationLink(destination: PersonalChatView()) {
+                        NavigationLink(destination: PersonalChatScreen(contact: .init(uid: "1", name: "Маман"))) {
                             ChatCardView(chat: chat, contact: contacts)
                         }
                     }

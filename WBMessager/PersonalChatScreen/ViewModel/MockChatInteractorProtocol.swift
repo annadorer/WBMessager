@@ -10,11 +10,12 @@ import ExyteChat
 import Combine
 
 protocol ChatInteractorProtocol {
-    var messages: AnyPublisher<[Message], Never> { get }
-    var user: [User] { get }
-    var otherUser: [User] { get }
+    
+    var messages: AnyPublisher<[MockMessage], Never> { get }
+    var senders: [MockUser] { get }
+    var otherSenders: [MockUser] { get }
 
-    func send(draftMessage: ExyteChat.DraftMessage, replyToMessage: ExyteChat.ReplyMessage?)
+    func send(draftMessage: DraftMessage)
 
     func connect()
     func disconnect()

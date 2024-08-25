@@ -1,27 +1,14 @@
 //
-//  MessageModel.swift
+//  MockAttachment.swift
 //  WBMessager
 //
-//  Created by Anna on 15.08.2024.
+//  Created by Anna on 24.08.2024.
 //
 
 import Foundation
 import ExyteChat
 
-struct Message {
-    let id: String
-    let user: User
-    let createdAt: Date
-    var status: ExyteChat.Message.Status?
-
-    let text: String
-    let images: [MessageImage]
-    let videos: [MessageVideo]
-    let recording: Recording?
-    let replyMessage: ReplyMessage?
-}
-
-struct MessageImage {
+struct MockImage {
     let id: String
     let thumbnail: URL
     let full: URL
@@ -36,7 +23,7 @@ struct MessageImage {
     }
 }
 
-struct MessageVideo {
+struct MockVideo {
     let id: String
     let thumbnail: URL
     let full: URL
