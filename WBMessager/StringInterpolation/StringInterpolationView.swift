@@ -14,9 +14,9 @@ enum DateTypes {
 
 struct StringInterpolationView: View {
     
-    @State var selectedDate = Date()
-    @State var selectedLocale = Locale.current
-    @State var isSpellOut = true
+    @State private var selectedDate = Date()
+    @State private var selectedLocale = Locale.current
+    @State private var isSpellOut = true
     
     var dateTypes: DateTypes = .today
     var flags: [String] = ["🇺🇸", "🇷🇺", "🇰🇷", "🇫🇮", "🇷🇸"]
@@ -28,6 +28,7 @@ struct StringInterpolationView: View {
         Locale(identifier: "sr")]
     
     var body: some View {
+        
         VStack() {
             
             DatePicker("Select a date", selection: $selectedDate, displayedComponents: [.date])
@@ -51,7 +52,7 @@ struct StringInterpolationView: View {
         .padding(.top, 20)
     }
     
-    func displayDate(from date: Date) -> some View {
+    private func displayDate(from date: Date) -> some View {
         let calendar = Calendar.current
         let daysOffset = [-2, -1, 0, 1, 2]
         let dateTypes = [DateTypes].init([.dayBeforeYesterday, .yesterday, .today, .tommorow, .dayAfterTommorow])
