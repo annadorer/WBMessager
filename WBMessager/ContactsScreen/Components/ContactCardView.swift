@@ -9,6 +9,7 @@ import SwiftUI
 import UISystem
 
 struct ContactCardView: View {
+    
     let contact: ContactCardModel
     
     var body: some View {

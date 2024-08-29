@@ -20,5 +20,6 @@ enum UI {
         static let enteringCode = "entering_code".localized
         static let sentCodeAlready = "sent_code_already".localized
         static let requestCodeAgain = "request_code_again".localized
+        static let yourStory = "your_story".localized
     }
 }

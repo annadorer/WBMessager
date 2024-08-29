@@ -42,7 +42,7 @@ struct BottomNavigationView: View {
                 Image(selectedTab == .contacts ? Tabs.contacts.activeIcon : Tabs.contacts.inactiveIcon)
             }.tag(Tabs.contacts)
             
-            ChatsScreen().tabItem {
+            ChatsScreen(contacts: ContactCardModel(name: "Анастасия Иванова", image: "FirstContactImage", phoneNumber: "+7 999 999-99-99", isOnline: false, hasStory: false, lastSeenDate: Date(timeIntervalSinceNow: -90_000))).tabItem {
                 Image(selectedTab == .chats ? Tabs.chats.activeIcon : Tabs.chats.inactiveIcon)
             }.tag(Tabs.chats)
             
